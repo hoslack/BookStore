@@ -1,3 +1,6 @@
-export default book => {
-	console.log(`a book has been selsected, ${book.title}`);
+export const selectBook = book => {
+	return {
+		type: 'BOOK_SELECTED',
+		payload: book,
+	};
 };
